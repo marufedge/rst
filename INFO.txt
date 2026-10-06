@@ -1,0 +1,116 @@
+sales-erp/
+├── config.php
+├── login.php
+├── logout.php
+├── dashboard.php
+├── navbar.php
+├── profile.php                    ← About Me / Profile page
+├── database.sql                   ← Complete schema
+├── install.php
+├── .htaccess
+│
+├── assets/
+│   └── css/
+│       └── modern-ui.css          ← Visual effects & animations
+│
+├── uploads/
+│   ├── products/                  ← Product images
+│   ├── avatars/                   ← User profile photos
+│   ├── sales/
+│   ├── invoices/
+│   └── company/
+│
+├── products/
+│   ├── products-shop.php          ← Electronics grid view
+│   ├── add.php
+│   ├── edit.php
+│   └── imei.php                   ← IMEI tracking for phones
+│
+├── brands/
+│   └── index.php
+│
+├── categories/
+│   └── index.php
+│
+├── sales/
+│   ├── index.php
+│   ├── add.php
+│   ├── invoice.php
+│   └── view.php
+│
+├── customers/
+│   ├── index.php
+│   └── ledger.php
+│
+├── accounting/
+│   ├── cash-in-hand.php
+│   ├── expenses.php
+│   └── transactions.php
+│
+├── reports/
+│   ├── index.php
+│   ├── sales-report.php
+│   ├── brand-report.php           ← Sales by brand
+│   └── item-wise-report.php       ← Item-wise analysis
+│
+├── settings/
+│   ├── company.php
+│   ├── users.php
+│   ├── audit-log.php
+│   └── recycle-bin.php
+│
+└── error/
+    ├── 404.html
+    └── 500.html
+
+
+
+
+
+
+
+Installation Instructions:
+Create Database:
+
+Create a MySQL database named sales_erp
+
+Import the database.sql file to create tables
+
+Configure Database:
+
+Update config.php with your database credentials
+
+Set the correct APP_URL for your installation
+
+Create Upload Directories:
+
+Create an uploads folder in your project root
+
+Ensure it has write permissions (755 or 777)
+
+Set Default Admin User:
+
+Run this SQL to create admin user (password: admin123):
+
+sql
+INSERT INTO users (username, password, full_name, email, role) 
+VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Administrator', 'admin@example.com', 'admin');
+
+
+Features Included:
+✅ User Authentication - Secure login system
+✅ Dashboard - Overview of key metrics
+✅ Daily Sales Management - Add, edit, delete sales with product items
+✅ File Attachments - Upload files for sales, deliveries, and deposits
+✅ Delivery Payments - Track payments to delivery men
+✅ Bank Deposits - Record bank deposits with attachment support
+✅ Reports - Generate various reports with date filters
+✅ DataTables - Interactive tables with sorting and searching
+✅ Responsive Design - Works on desktop and mobile
+✅ Print & Export - Print reports and export to Excel
+
+
+
+Set Default Admin User:
+
+Run this SQL to create admin user (password: admin123):

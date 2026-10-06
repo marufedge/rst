@@ -1,0 +1,26 @@
+sales-erp/
+├── config.php
+├── login.php
+├── dashboard.php
+├── logout.php
+├── navbar.php
+├── uploads/
+│   ├── sales/
+│   ├── delivery/
+│   ├── deposits/
+│   └── reports/
+├── sales/
+│   ├── index.php
+│   ├── add.php
+│   ├── edit.php
+│   └── view.php
+├── delivery/
+│   └── index.php
+├── deposits/
+│   └── index.php
+├── reports/
+│   └── index.php
+└── masters/
+    ├── salesmen.php
+    ├── delivery_men.php
+    └── products.php
